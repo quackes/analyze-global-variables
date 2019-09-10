@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        let oldKeys = Object.keys(window);
+    </script>
+    <script src="data:text/javascript;base64,{jsfile}"></script>
+</head>
+<body>
+    <div id="window-diff"></div>
+    <script>
+        document.querySelector('#window-diff').append(document.createTextNode(
+            `[
+            ${Object.keys(window)
+                .filter(v => !oldKeys.includes(v))
+                .map(v => `"${v}"`).join(',')}
+            ]`)
+        );
+    </script>
+</body>
+</html>

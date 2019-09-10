@@ -1,0 +1,19 @@
+{
+  "name": "analyze-global-variables",
+  "version": "0.0.1",
+  "description": "Prints out the variables, that are defined on the global scope in a passed javascript file",
+  "main": "cli.js",
+  "bin": {
+    "analyze-global-variables": "./cli.js"
+  },
+  "dependencies": {
+    "puppeteer": "^1.19.0",
+    "webpack-cli": "^3.3.8",
+    "webpack": "^4.39.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
